@@ -4,7 +4,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 @Component
 public class Schedule {
-    @Scheduled(cron = "0 */10 9-18 * * 0-4")
+    @Scheduled(cron = "0 0 * 1-15 * *")
     public void scheduleTask() {
         System.out.println("Hello World");
     }
